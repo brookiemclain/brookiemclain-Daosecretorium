@@ -1,0 +1,14 @@
+export default function CreatorList() {
+  const creators = ['Alice', 'Bob', 'Charlie']
+
+  return (
+    <div className="bg-white p-6 rounded-lg shadow">
+      <h2 className="text-2xl font-semibold mb-4">Creators</h2>
+      <ul className="space-y-2">
+        {creators.map(name => (
+          <li key={name} className="p-3 bg-gray-100 rounded">{name}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
